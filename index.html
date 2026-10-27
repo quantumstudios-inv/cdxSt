@@ -1,23 +1,216 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#090909"><meta name="description" content="CODEX STUDIO — un estudio independiente creando mundos para sobrevivir.">
-  <title>CODEX STUDIO - equipo de desarrollo</title><link rel="icon" type="image/png" href="assets/codex-emblem.png"><link rel="shortcut icon" type="image/png" href="assets/codex-emblem.png"><link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0a0a0a">
+  <meta name="description" content="CODEX STUDIO — Estudio independiente de videojuegos. Creamos mundos para sobrevivir.">
+  <title>CODEX STUDIO</title>
+  <link rel="icon" type="image/jpeg" href="assets/codex-studio-logo.jpg">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 </head>
 <body>
-  <div class="loader" id="loader" aria-label="Cargando CODEX STUDIO"><img class="loader-logo" src="assets/codex-studio-logo.png" alt="CODEX STUDIO"><div class="loader-name">CODEX <b>STUDIO</b></div><div class="load-track"><i></i></div><small>PREPARANDO EXPERIENCIA</small></div>
-  <button class="sidebar-edge" type="button" aria-label="Mostrar menú lateral" aria-expanded="false"><span aria-hidden="true">›</span></button>
-  <aside class="sidebar" aria-label="Navegación principal"><a class="brand" href="#inicio" aria-label="CODEX Studio inicio"><img class="brand-logo" src="assets/codex-studio-logo.png" alt=""><span class="brand-name">CODEX<small>STUDIO</small></span></a><div class="side-rule"></div><nav>
-    <a class="nav-link active" href="#inicio">Inicio</a><a class="nav-link" href="#estudio">El estudio</a><a class="nav-link" href="#proyectos">Proyectos</a><a class="nav-link" href="#versiones">Versiones</a><a class="nav-link" href="#comunidad">Comunidad</a><a class="nav-link" href="#miembros">Miembros</a>
-  </nav><div class="side-bottom"><span class="status-dot"></span> INDEPENDIENTE · EN DESARROLLO</div></aside>
-  <header class="mobile-head"><a class="brand" href="#inicio"><img class="brand-logo" src="assets/codex-studio-logo.png" alt=""><span class="brand-name">CODEX<small>STUDIO</small></span></a><button class="menu-toggle" aria-label="Abrir menú" aria-expanded="false"><i></i><i></i></button></header>
+
+  <!-- NAV -->
+  <header class="header">
+    <a href="#inicio" class="logo">
+      <img src="assets/codex-studio-logo.jpg" alt="CODEX STUDIO" class="logo-img">
+    </a>
+    <nav class="nav" id="nav">
+      <a href="#inicio">Inicio</a>
+      <a href="#equipo">Equipo</a>
+      <a href="#proyectos">Proyectos</a>
+      <a href="#contacto">Contacto</a>
+      <a href="#redes">Redes</a>
+    </nav>
+    <button class="menu-btn" id="menuBtn" aria-label="Menú">
+      <span></span><span></span>
+    </button>
+  </header>
+
   <main>
-    <section class="hero" id="inicio"><div class="hero-grid"></div><img class="hero-logo-bg" src="assets/codex-emblem.png" alt="" aria-hidden="true"><div class="hero-orb"></div><div class="hero-content"><p class="eyebrow"><span></span> ESTUDIO INDEPENDIENTE DE VIDEOJUEGOS</p><h1>CODEX<br><em>STUDIO</em></h1><p class="hero-copy">Bienvenido a CODEX STUDIO. Creamos experiencias intensas donde cada decisión cuenta y sobrevivir es solo el comienzo.</p><div class="hero-actions"><a class="button gold" href="#proyectos">EXPLORAR PROYECTOS <b>↗</b></a><a class="text-link" href="#estudio">CONOCÉ EL ESTUDIO <span>↓</span></a></div></div><div class="hero-index"><span>01 / 06</span><span>DESLIZÁ PARA DESCUBRIR</span></div></section>
-    <section class="intro section" id="estudio"><div class="section-label">02 <span>—</span> EL ESTUDIO</div><div class="intro-layout"><div class="intro-title"><p class="eyebrow">UNA IDEA. UN EQUIPO. UN MUNDO.</p><h2>HACEMOS JUEGOS<br>QUE <em>SE SIENTEN.</em></h2></div><div class="intro-copy"><p>Somos un estudio independiente que convierte ideas en mundos para explorar. Diseñamos experiencias inmersivas, con una mirada puesta en la comunidad y en cada detalle.</p><p>Ahora estamos construyendo un juego de supervivencia para móviles: un lugar impredecible donde el ingenio, la estrategia y las decisiones definen cada historia.</p><a class="text-link" href="#miembros">CONOCÉ AL EQUIPO <span>→</span></a></div></div><div class="manifesto"><span>01 / CURIOSIDAD</span><span>02 / CREATIVIDAD</span><span>03 / COMUNIDAD</span><span>04 / JUEGO</span></div></section>
-    <section class="project section" id="proyectos"><div class="section-label">04 <span>—</span> PROYECTOS</div><div class="project-feature"><div class="project-art"><div class="moon"></div><div class="land land-back"></div><div class="land land-front"></div><div class="project-overlay"></div><span class="project-tag">PROYECTO EN DESARROLLO</span><span class="project-coords">34°36'12"S<br>58°22'54"W</span><div class="project-title"><p>VIDEOJUEGO EN PROCESO</p><h2>???</h2></div></div><div class="project-details"><p class="eyebrow">SUPERVIVENCIA · MÓVIL</p><p>Un videojuego de supervivencia para móviles está en proceso. Estamos preparando el mundo y sus primeras mecánicas. Muy pronto compartiremos más.</p><div class="project-stats"><div><b>01</b><span>EXPLORÁ</span></div><div><b>02</b><span>SOBREVIVÍ</span></div><div><b>03</b><span>EVOLUCIONÁ</span></div></div><a class="button outline" href="#comunidad">AVANCE EN DISCORD! <b>↗</b></a><small class="placeholder-note">Nombre e información provisionales.</small></div></div></section>
-    <section class="versions section" id="versiones"><div class="section-label">05 <span>—</span> REGISTRO DE DESARROLLO</div><div class="section-heading"><div><p class="eyebrow">CADA PASO CUENTA</p><h2>VERSIONES &<br><em>NOVEDADES.</em></h2></div><p>El proyecto evoluciona. Acá vas a encontrar las novedades y avances del equipo.</p></div><div class="timeline"><article class="version"><span class="version-mark">●</span><div class="version-date">EN CURSO <small>PRÓXIMAMENTE</small></div><div class="version-content"><div class="version-top"><h3>Construyendo los cimientos</h3><span>EN DESARROLLO</span></div><p>Diseño del mundo, mecánicas principales y primeras pruebas de supervivencia.</p></div></article><article class="version muted"><span class="version-mark">○</span><div class="version-date">SIGUIENTE ETAPA<small>POR ANUNCIAR</small></div><div class="version-content"><div class="version-top"><h3>Más detalles pronto</h3><span>PLANIFICADO</span></div><p>Compartiremos avances reales a medida que el desarrollo avance.</p></div></article></div></section>
-    <section class="community section" id="comunidad"><div class="community-glow"></div><div class="section-label">06 <span>—</span> COMUNIDAD</div><div class="community-content"><p class="eyebrow">EL MUNDO SE CONSTRUYE EN EQUIPO</p><h2>LA PRÓXIMA<br>HISTORIA ES <em>JUNTOS.</em></h2><p>Seguinos para ver el progreso, compartir ideas y enterarte de las novedades de CODEX STUDIO.</p><div class="socials"><a href="#" aria-label="Discord">DISCORD <span>↗</span></a><a href="#" aria-label="Instagram">INSTAGRAM <span>↗</span></a><a href="#" aria-label="YouTube">YOUTUBE <span>↗</span></a><a href="#" aria-label="TikTok">TIKTOK <span>↗</span></a></div><small>Los enlaces sociales se pueden editar en el archivo index.html.</small><div class="partner"><div><p class="eyebrow">PARTNER / APOYO</p><strong>Tu marca puede acompañar este proyecto.</strong><small>Espacio editable para configurar un partner, su logo y su enlace.</small></div><a href="#" aria-label="Configurar enlace de partner">CONFIGURAR PARTNER <span>↗</span></a></div><div class="studio-email"><span>GMAIL DEL ESTUDIO</span><strong>Configurá aquí el correo oficial</strong><small>Reemplazá este texto por la dirección Gmail de CODEX STUDIO.</small></div></div>    <section class="team section" id="miembros"><div class="section-label">03 <span>—</span> EL EQUIPO</div><div class="section-heading"><div><p class="eyebrow">PERSONAS DETRÁS DEL CÓDIGO</p><h2>PEQUEÑO EQUIPO.<br><em>GRANDES MUNDOS.</em></h2></div><p>Una comunidad creativa dando forma a algo que todavía está por descubrirse.</p></div><div class="team-grid"><article class="member-card"><div class="member-art art-one"><span>CS</span><i></i></div><div class="member-info"><div><h3>Fundador</h3><p>DIRECCIÓN CREATIVA</p></div><span class="member-num">01</span></div></article><article class="member-card"><div class="member-art art-two"><span>CS</span><i></i></div><div class="member-info"><div><h3>Desarrollo</h3><p>DISEÑO Y TECNOLOGÍA</p></div><span class="member-num">02</span></div></article><article class="member-card member-open"><div class="member-art art-three"><span>+</span></div><div class="member-info"><div><h3>¿Sos parte?</h3><p>LA HISTORIA SIGUE</p></div><span class="member-num">03</span></div></article></div><p class="placeholder-note">Perfiles de muestra · reemplazá estos roles por los nombres y enlaces oficiales.</p></section>
-<footer><a class="brand" href="#inicio"><img class="brand-logo" src="assets/codex-studio-logo.png" alt=""><span class="brand-name">CODEX<small>STUDIO</small></span></a><span>HECHO CON INTENCIÓN. JUGADO EN COMUNIDAD.</span><span>© 2026 CODEX STUDIO</span></footer></section>
-  </main><script src="script.js"></script>
-</body></html>
+
+    <!-- INICIO / HERO -->
+    <section class="hero" id="inicio">
+      <div class="hero-bg"></div>
+      <div class="hero-content">
+        <p class="tag">ESTUDIO INDEPENDIENTE · MÉXICO</p>
+        <h1>CODEX<br><span>STUDIO</span></h1>
+        <p class="hero-text">
+          Creamos experiencias intensas donde cada decisión cuenta.<br>
+          Sobrevivir es solo el comienzo.
+        </p>
+        <div class="hero-actions">
+          <a href="#proyectos" class="btn btn-gold">Ver proyectos</a>
+          <a href="#equipo" class="btn btn-ghost">Conocer al equipo</a>
+        </div>
+      </div>
+      <div class="hero-logo-float">
+        <img src="assets/codex-studio-logo.jpg" alt="">
+      </div>
+      <div class="hero-scroll">
+        <span>Desliza</span>
+        <div class="scroll-line"></div>
+      </div>
+    </section>
+
+    <!-- EQUIPO -->
+    <section class="section equipo" id="equipo">
+      <div class="container">
+        <div class="section-head">
+          <p class="tag">01 — EQUIPO</p>
+          <h2>Los que hacen<br>que pase.</h2>
+          <p class="section-desc">Pocos, pero con todo el corazón y la cabeza puestos en construir mundos que se sientan de verdad.</p>
+        </div>
+
+        <div class="team-grid">
+          <article class="member">
+            <div class="member-photo">
+              <img src="assets/ceotm.png" alt="Rc Codex" onerror="this.style.display='none'">
+            </div>
+            <div class="member-info">
+              <h3>Rc Codex</h3>
+              <p class="role">CEO & Fundador</p>
+              <p class="bio">Visión, dirección creativa y la terquedad necesaria para sacar esto adelante.</p>
+            </div>
+          </article>
+
+          <article class="member">
+            <div class="member-photo">
+              <img src="assets/devtm.png" alt="Codex Studio Developers Team" onerror="this.style.display='none'">
+            </div>
+            <div class="member-info">
+              <h3>Codex Studio<br>Developers Team</h3>
+              <p class="role">Desarrollo</p>
+              <p class="bio">El equipo que convierte las ideas en código, mecánicas y mundos jugables.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROYECTOS -->
+    <section class="section proyectos" id="proyectos">
+      <div class="container">
+        <div class="section-head">
+          <p class="tag">02 — PROYECTOS</p>
+          <h2>Lo que estamos<br>construyendo.</h2>
+        </div>
+
+        <div class="project-card">
+          <div class="project-visual">
+            <div class="project-badge">EN DESARROLLO</div>
+            <div class="project-title-big">???</div>
+            <p class="project-coords">34°36'12"S · 58°22'54"W</p>
+          </div>
+          <div class="project-body">
+            <p class="tag">SUPERVIVENCIA · MÓVIL</p>
+            <h3>Proyecto en proceso</h3>
+            <p>
+              Un videojuego de supervivencia para móviles. Estamos armando el mundo,
+              las mecánicas principales y las primeras pruebas. Pronto habrá más.
+            </p>
+            <div class="project-stats">
+              <div><strong>01</strong><span>Explorá</span></div>
+              <div><strong>02</strong><span>Sobreviví</span></div>
+              <div><strong>03</strong><span>Evolucioná</span></div>
+            </div>
+            <a href="#redes" class="btn btn-outline">Seguir avances en Discord</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section class="section contacto" id="contacto">
+      <div class="container">
+        <div class="section-head">
+          <p class="tag">03 — CONTACTO</p>
+          <h2>¿Querés hablar<br>con nosotros?</h2>
+          <p class="section-desc">
+            Para colaboraciones, prensa, partners o simplemente para saludar.
+          </p>
+        </div>
+
+        <div class="contact-box">
+          <div class="contact-item">
+            <span class="contact-label">Correo del estudio</span>
+            <a href="mailto:contacto@codexstudio.com" class="contact-value">contacto@codexstudio.com</a>
+            <small>Reemplazá este correo por el oficial cuando lo tengas.</small>
+          </div>
+          <div class="contact-item">
+            <span class="contact-label">Ubicación</span>
+            <p class="contact-value">México</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- REDES -->
+    <section class="section redes" id="redes">
+      <div class="container">
+        <div class="section-head">
+          <p class="tag">04 — REDES</p>
+          <h2>Seguinos y<br>sé parte.</h2>
+          <p class="section-desc">
+            Ahí compartimos avances, ideas y todo lo que va saliendo del estudio.
+          </p>
+        </div>
+
+        <div class="social-grid">
+          <a href="#" class="social-card" target="_blank" rel="noopener">
+            <span class="social-name">Discord</span>
+            <span class="social-arrow">↗</span>
+          </a>
+          <a href="#" class="social-card" target="_blank" rel="noopener">
+            <span class="social-name">Instagram</span>
+            <span class="social-arrow">↗</span>
+          </a>
+          <a href="#" class="social-card" target="_blank" rel="noopener">
+            <span class="social-name">YouTube</span>
+            <span class="social-arrow">↗</span>
+          </a>
+          <a href="#" class="social-card" target="_blank" rel="noopener">
+            <span class="social-name">TikTok</span>
+            <span class="social-arrow">↗</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <img src="assets/codex-studio-logo.jpg" alt="" class="footer-logo">
+        <span>CODEX STUDIO</span>
+      </div>
+      <p class="footer-copy">Codex Studio © - Todos los derechos reservados</p>
+    </div>
+  </footer>
+
+  <script>
+    const menuBtn = document.getElementById('menuBtn');
+    const nav = document.getElementById('nav');
+    menuBtn.addEventListener('click', () => {
+      nav.classList.toggle('open');
+      menuBtn.classList.toggle('open');
+    });
+    nav.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        nav.classList.remove('open');
+        menuBtn.classList.remove('open');
+      });
+    });
+    const header = document.querySelector('.header');
+    window.addEventListener('scroll', () => {
+      header.classList.toggle('scrolled', window.scrollY > 40);
+    });
+  </script>
+</body>
+              </html>
