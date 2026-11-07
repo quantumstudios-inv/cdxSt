@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head><meta charset="utf-8"><title>Redirigiendo...</title></head>
+<body>
+<p>Redirigiendo a registro...</p>
+<script>
+  const code = window.location.pathname.split("/").pop();
+  localStorage.setItem("ref", code);
+  document.cookie = "ref=" + code + "; path=/";
+  window.location.href = "/register?ref=" + code;
+</script>
+</body>
+</html>
