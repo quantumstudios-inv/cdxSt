@@ -4,9 +4,18 @@
 <body>
 <p>Redirigiendo a TitanCloud...</p>
 <script>
-  const code = window.location.pathname.split("/").pop();
-  localStorage.setItem("ref", code);
-  window.location.href = "https://titanc.codexstudio.online/register?ref=" + code;
+  // Agarramos el codigo de ?code= o de /r/CODIGO
+  const params = new URLSearchParams(window.location.search);
+  let code = params.get("code") || params.get("ref");
+  if(!code){
+    const parts = window.location.pathname.split("/").filter(p => p !== "");
+    if(parts[0] === "r" && parts[1]) code = parts[1];
+  }
+  if(code){
+    window.location.href = "https://titanc.codexstudio.online/register?ref=" + code;
+  } else {
+    window.location.href = "https://titanc.codexstudio.online/";
+  }
 </script>
 </body>
 </html>
