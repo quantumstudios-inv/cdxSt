@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head><meta charset="utf-8"><title>Redirigiendo...</title></head>
+<body>
+<p>Redirigiendo a TitanCloud...</p>
+<script>
+  // Si es /r/CODIGO lo manda al panel
+  const path = window.location.pathname;
+  const parts = path.split("/").filter(p => p !== "");
+  // parts = ["r", "LT3F1R"]
+  if(parts[0] === "r" && parts[1]){
+    const code = parts[1];
+    window.location.href = "https://titanc.codexstudio.online/register?ref=" + code;
+  } else {
+    window.location.href = "/";
+  }
+</script>
+</body>
+</html>
